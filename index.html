@@ -1,48 +1,111 @@
-<html>  
+<!DOCTYPE html>  
+<html lang="en">  
 <head>  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
-  <style>   
-    .hero-banner {  
-       background-image: url("https://www.historic-uk.com/wp-content/uploads/2017/04/roman-england-1.jpg");   
-       background-size: cover;  
-       background-repeat: no-repeat;  
-       height: 100vh;  
-       display: flex;  
-       justify-content: center;   
-       align-items: center;  
-   }  
+<meta charset="UTF-8" />  
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />  
 
-   .hero-content {  
-       text-align: center;  
-       color: white;  
-         font-family: "Silkscreen", sans-serif;
+<!-- Google Fonts -->  
+<link rel="preconnect" href="https://fonts.googleapis.com" />  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  
+<link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet" />  
 
-   }  
+<style>  
+   
+  * {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+  }  
 
-   .hero-title {  
-       font-size: 5em;  
-        font-family: "Meie Script", cursive; 
-         line-height: 0em;
-         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-   }  
+  .navbar {  
+    width: 100%;  
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px 20px;  
+    position: fixed;
+    top: 0;  
+    left: 0;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    z-index: 1000; 
+  }  
 
-   .hero-description{
-        font-size: 14em;  
-         font-family: "Meie Script", cursive;
-         font-weight: 1000;
-          line-height: 0.2em;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-   }
-  </style>  
+  .navbar ul {  
+    list-style: none;  
+    display: flex;  
+    gap: 20px;  
+  }  
+
+  .navbar li {  
+    /* style for links */  
+  }  
+
+  .navbar a {  
+    text-decoration: none;  
+    color: white;  
+    font-family: "Meie Script", cursive;  
+    font-size: 3em;  
+    padding: 10em, 4em;  
+    transition: background-color 0.3s, color 0.3s;  
+  }  
+
+  .navbar a:hover {  
+    background-color: rgba(255,255,255,0.2);  
+    border-radius: 1em;  
+  }  
+
+  /* Existing styles for hero */  
+  .hero-banner {  
+    background-image: url("https://www.historic-uk.com/wp-content/uploads/2017/04/roman-england-1.jpg");   
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    height: 100vh;  
+    display: flex;  
+    justify-content: center;   
+    align-items: center;  
+    padding-top: 60px; /* to push content below navbar */  
+  }  
+
+  .hero-content {  
+    text-align: center;  
+    color: white;  
+    font-family: "Meie Script", cursive;  
+  }  
+
+  .hero-title {  
+    font-size: 5em;  
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);  
+  }  
+
+  .hero-description {  
+    font-size: 10em;  
+    font-family: "Meie Script", cursive;  
+    font-weight: 1000;  
+    line-height: 1.2;  
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);  
+  }  
+</style>  
 </head>  
 <body>  
-  <section class="hero-banner">  
-    <div class="hero-content">   
-        <h1 class="hero-title">A Roman's Guide To</h1> 
-        <p class="hero-description">Britain</p>  
-    </div>  
-  </section>  
+
+<!-- Navbar -->  
+<nav class="navbar">  
+  <ul>  
+    <li><a href="#home">Home</a></li>  
+    <li><a href="#about">About</a></li>  
+    <li><a href="#history">History</a></li>  
+    <li><a href="#contact">Contact</a></li>  
+  </ul>  
+</nav>  
+
+<!-- Hero Banner -->  
+<section class="hero-banner">  
+  <div class="hero-content">  
+    <h1 class="hero-title">A Roman's Guide To</h1>  
+    <p class="hero-description">Britain</p>  
+  </div>  
+</section>  
+
 </body>  
 </html>
