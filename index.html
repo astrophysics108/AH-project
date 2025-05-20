@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>  
+
 <html lang="en">  
 <head>  
 <meta charset="UTF-8" />  
@@ -7,20 +9,24 @@
 <!-- Google Fonts -->  
 <link rel="preconnect" href="https://fonts.googleapis.com" />  
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  
-<link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet" />  
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
 <style>  
-   
   * {  
     margin: 0;  
     padding: 0;  
     box-sizing: border-box;  
   }  
 
+  h1{
+      font-family: "Rubik";
+      text-align: center;
+      color: black;
+  }
   .navbar {  
     width: 100%;  
     background-color: rgba(0, 0, 0, 0.7); 
-    padding: 10px 20px;  
+    padding: 1em 2em;  
     position: fixed;
     top: 0;  
     left: 0;  
@@ -43,7 +49,7 @@
   .navbar a {  
     text-decoration: none;  
     color: white;  
-    font-family: "Meie Script", cursive;  
+    font-family: "Rubik";  
     font-size: 3em;  
     padding: 10em, 4em;  
     transition: background-color 0.3s, color 0.3s;  
@@ -56,9 +62,7 @@
 
   /* Existing styles for hero */  
   .hero-banner {  
-    background-image: url("https://www.historic-uk.com/wp-content/uploads/2017/04/roman-england-1.jpg");   
-    background-size: cover;  
-    background-repeat: no-repeat;  
+    background-color: rgb(183, 208, 240);
     height: 100vh;  
     display: flex;  
     justify-content: center;   
@@ -69,7 +73,7 @@
   .hero-content {  
     text-align: center;  
     color: white;  
-    font-family: "Meie Script", cursive;  
+    font-family: "Rubik";  
   }  
 
   .hero-title {  
@@ -80,11 +84,13 @@
 
   .hero-description {  
     font-size: 10em;  
-    font-family: "Meie Script", cursive;  
+    font-family: "Rubik";  
     font-weight: 1000;  
     line-height: 1.2;  
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);  
   }  
+
+   
 </style>  
 </head>  
 <body>  
@@ -92,7 +98,7 @@
 <!-- Navbar -->  
 <nav class="navbar">  
   <ul>  
-    <li><a href="#home">Home</a></li>  
+    <li><a href="#info">Key Info</a></li>  
     <li><a href="#about">About</a></li>  
     <li><a href="#history">History</a></li>  
     <li><a href="#contact">Contact</a></li>  
@@ -102,10 +108,14 @@
 <!-- Hero Banner -->  
 <section class="hero-banner">  
   <div class="hero-content">  
-    <h1 class="hero-title">A Roman's Guide To</h1>  
+    <h1 class="hero-title" style = "color:white">A Roman's Guide To</h1>  
     <p class="hero-description">Britain</p>  
   </div>  
 </section>  
 
-</body>  
+<h1 style = "font-size: 4em; font-weight: 700; margin-top: 1em;" id = "info">Warnings for Romans!</h1>
+
+
+</body>
+ 
 </html>
